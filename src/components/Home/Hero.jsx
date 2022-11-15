@@ -1,20 +1,20 @@
-import React from "react";
-import { motion } from "framer-motion";
-import reactlogo from "../../assets/icons/logo192.png";
-import tailwind from "../../assets/icons/tailwind.png";
-import javascript from "../../assets/icons/javascript.png";
-import me from "../../assets/images/home/me.png";
+import React from 'react';
+import { motion } from 'framer-motion';
+import reactlogo from '../../assets/icons/logo192.png';
+import tailwind from '../../assets/icons/tailwind.png';
+import javascript from '../../assets/icons/javascript.png';
+import me from '../../assets/images/home/me.png';
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiOutlineTwitter,
-} from "react-icons/ai";
+} from 'react-icons/ai';
 const Hero = () => {
   const spinTransition = {
     loop: Infinity,
     duration: 15,
-    ease: "linear",
+    ease: 'linear',
   };
   return (
     <div className="bg-gray-100">
@@ -52,7 +52,7 @@ const Hero = () => {
                 </span>
                 <span class="relative invisible">Button Text</span>
               </a>
-              <div className="w-10 h-40  absolute -left-10 top-32 flex-col space-y-4">
+              <div className="w-10 h-40  absolute 2xl:-left-10 lg:left-5 top-32 flex-col space-y-4">
                 <div
                   href="#_"
                   class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
