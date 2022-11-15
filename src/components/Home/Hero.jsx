@@ -55,21 +55,21 @@ const Hero = () => {
               <div className="w-10 h-40  absolute -left-10 top-32 flex-col space-y-4">
                 <div
                   href="#_"
-                  class="rounded-full cursor-pointer w-10 h-10 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+                  class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
                 >
-                  <AiFillGithub className="w-7 h-7" />
+                  <AiFillGithub className="w-5 h-5" />
                 </div>
                 <div
                   href="#_"
-                  class="rounded-full cursor-pointer w-10 h-10 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+                  class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
                 >
-                  <AiFillLinkedin className="w-7 h-7" />
+                  <AiFillLinkedin className="w-5 h-5" />
                 </div>
                 <div
                   href="#_"
-                  class="rounded-full cursor-pointer w-10 h-10 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+                  class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
                 >
-                  <AiOutlineTwitter className="w-7 h-7" />
+                  <AiOutlineTwitter className="w-5 h-5" />
                 </div>
               </div>
             </div>
