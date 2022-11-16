@@ -2,6 +2,7 @@ import { AnimatePresence } from "framer-motion";
 import { lazy, Suspense } from "react";
 import { Route, Routes, useLocation, useRoutes } from "react-router-dom";
 import Spinner from "./global/Spinner";
+import About from "./Pages/About";
 
 const Home = lazy(() => {
   return new Promise((resolve) => {
@@ -15,9 +16,10 @@ function App() {
   return (
     <div className="App">
       <Suspense fallback={<Spinner />}>
-        <AnimatePresence>
+        <AnimatePresence mode="wait" initial={false}>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
           </Routes>
         </AnimatePresence>
       </Suspense>

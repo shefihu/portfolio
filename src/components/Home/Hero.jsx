@@ -1,20 +1,20 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import reactlogo from '../../assets/icons/logo192.png';
-import tailwind from '../../assets/icons/tailwind.png';
-import javascript from '../../assets/icons/javascript.png';
-import me from '../../assets/images/home/me.png';
+import React from "react";
+import { motion } from "framer-motion";
+import reactlogo from "../../assets/icons/logo192.png";
+import tailwind from "../../assets/icons/tailwind.png";
+import javascript from "../../assets/icons/javascript.png";
+import me from "../../assets/images/home/me.png";
 import {
   AiFillGithub,
   AiFillLinkedin,
   AiFillTwitterCircle,
   AiOutlineTwitter,
-} from 'react-icons/ai';
+} from "react-icons/ai";
 const Hero = () => {
   const spinTransition = {
     loop: Infinity,
     duration: 15,
-    ease: 'linear',
+    ease: "linear",
   };
   return (
     <div className="bg-gray-100">
@@ -74,11 +74,22 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className=" absolute 2xl:w-[35rem] lg:w-[25rem] lg:h-[25rem] 2xl:h-[35rem] bg-white z-20 top-20 2xl:left-[30rem] lg:left-[15rem] rounded-full">
+          <motion.div
+            initial={{ opacity: 0, translateX: 0 }}
+            whileInView={{ opacity: 1, translateX: -60 }}
+            transition={{ duration: 0.5 }}
+            className=" absolute 2xl:w-[35rem] lg:w-[25rem] lg:h-[25rem] 2xl:h-[35rem] bg-white z-20 top-20 2xl:left-[30rem] lg:left-[15rem] rounded-full"
+          >
             <div className="absolute 2xl:left-40 xl:left-20 top-10">
-              <img src={me} alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: "200px" }}
+                animate={{ opacity: 1, x: 0 }}
+                src={me}
+                alt=""
+                // className="animate-bounce lg:animate-ping"
+              />
             </div>
-          </div>
+          </motion.div>
           <div className="w-[50rem] xl:block hidden   h-full relative">
             <div className="w-14 h-14 rounded-full  absolute right-0 bg-gradient-to-r  from-gray-300  top-40"></div>
             <div className="w-20 h-20 rounded-full  absolute bg-gradient-to-r  from-gray-300  left-7 top-40"></div>

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import resume from '../assets/pdf/RotimiShefiuBalogunResume.pdf';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import resume from "../assets/pdf/RotimiShefiuBalogunResume.pdf";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -8,17 +9,17 @@ const Navbar = () => {
         setIsScrolled(true);
       } else setIsScrolled(false);
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <div>
-      {' '}
+      {" "}
       <header
         className={`w-full  text-black ${
-          isScrolled && 'bg-black text-gray-200'
+          isScrolled && "bg-black text-gray-200"
         }`}
       >
         <div className="w-full h-full flex justify-between items-center 2xl:max-w-[110rem] max-w-[85rem] mx-auto">
@@ -27,13 +28,13 @@ const Navbar = () => {
           </div>
           <ul className="hidden items-center space-x-10 md:flex">
             <li className="headerLink">
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="headerLink">
-              <a href="/">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li className="headerLink">
-              <a href="/">Works</a>
+              <Link href="/">Works</Link>
             </li>
             <li className="headerLink">
               <a href="/">Experience</a>
@@ -46,7 +47,7 @@ const Navbar = () => {
               href={resume}
               className={`btnnn w-32 py-2 flex justify-center border transition ease-out duration-500 border-black ${
                 isScrolled &&
-                'transition ease-in duration-300 bg-white text-black'
+                "transition ease-in duration-300 bg-white text-black"
               } `}
             >
               Resume
