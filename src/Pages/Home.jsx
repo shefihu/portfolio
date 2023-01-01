@@ -1,24 +1,26 @@
 import React from "react";
 import Navbar from "../layout/Navbar";
 import { motion, useIsPresent } from "framer-motion";
-import Hero from "../components/Home/Hero";
+// import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
+import Hero from "../components/Home2/Hero";
 const Home = () => {
   const isPresent = useIsPresent();
   return (
     <div>
       <Navbar />
       <Hero />
-      <Projects />
+      {/* <Hero /> */}
+      {/* <Projects /> */}
       <motion.div
         initial={{ scaleX: 1 }}
         animate={{
           scaleX: 0,
-          transition: { duration: 0.5, delay: 0.5, ease: "circOut" },
+          transition: { duration: 1.7, delay: 0.5, ease: "circOut" },
         }}
         exit={{
           scaleX: 1,
-          transition: { duration: 0.5, ease: "circIn" },
+          transition: { duration: 1.7, ease: "circIn" },
         }}
         style={{ originX: isPresent ? 0 : 1 }}
         className="privacy-screen"

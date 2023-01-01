@@ -21,11 +21,14 @@ const Hero = () => {
       <div className="w-full 2xl:max-w-[110rem] xl:max-w-[85rem] lg:max-w-[55rem] mx-auto   h-[50rem] lg:flex hidden">
         <div className="w-full h-[50rem] flex justify-between relative">
           <div className="w-[40rem] h-full flex  flex-col justify-center ">
-            <h1 className="title text-6xl font-semibold z-40 ">
-              <span>Hi</span>
-              <span>I am Shefiu</span>
-              <span>A Frontend developer</span>
-            </h1>
+            <motion.h1 className="title text-[82px] large-texts leading-[2] font-semibold z-40 ">
+              {/* <span>Hi</span> */}
+              <span>Shefiu R.B</span>
+            </motion.h1>
+            <span className="text-2xl">
+              I'm a creative Frontend Developer passionate about converting
+              ideas into standard and scalable products.
+            </span>
             <div className="mt-7 relative">
               <a
                 href="#_"
@@ -90,7 +93,7 @@ const Hero = () => {
               />
             </div>
           </motion.div>
-          <div className="w-[50rem] xl:block hidden   h-full relative">
+          {/* <div className="w-[50rem] xl:block hidden   h-full relative">
             <div className="w-14 h-14 rounded-full  absolute right-0 bg-gradient-to-r  from-gray-300  top-40"></div>
             <div className="w-20 h-20 rounded-full  absolute bg-gradient-to-r  from-gray-300  left-7 top-40"></div>
 
@@ -112,7 +115,7 @@ const Hero = () => {
               </div>
               <div className="w-24 h-24 bg-white shadow-pink right-[12rem] rounded-lg absolute bottom-[13rem]"></div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
