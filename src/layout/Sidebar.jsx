@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { IoCloseCircle } from "react-icons/io5";
 import { AiOutlineClose } from "react-icons/ai";
-
+import resume from "../assets/pdf/RotimiShefiuBalogunResume.pdf";
 const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
   const location = useLocation();
   const sidebarVariant = {
@@ -101,6 +101,9 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
                 </Link>
               </motion.li>
               <motion.li
+                onClick={() => {
+                  setIsSidebarOpen(!isSidebarOpen);
+                }}
                 variants={itemvariants}
                 className={`relative w-full mb-[1.5rem] ${
                   location.pathname === "/about" ? "activeLink" : ""
@@ -113,16 +116,19 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
                 </Link>
               </motion.li>
               <motion.li
+                onClick={() => {
+                  setIsSidebarOpen(!isSidebarOpen);
+                }}
                 variants={itemvariants}
                 className={`relative w-full mb-[1.5rem] ${
                   location.pathname === "/contact" ? "activeLink" : ""
                 }`}
               >
-                <Link to={"/contact"}>
-                  <a className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase">
-                    <span className="text-white  mr-[11px]">03</span> contact us
-                  </a>
-                </Link>
+                <a href={resume}>
+                  <p className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase">
+                    <span className="text-white  mr-[11px]">03</span> Resume
+                  </p>
+                </a>
               </motion.li>
             </motion.ul>
             <motion.div className="w-full  h-10 border-t border-t-gray-200"></motion.div>

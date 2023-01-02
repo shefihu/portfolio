@@ -5,6 +5,7 @@ import { motion, useIsPresent } from "framer-motion";
 import Projects from "../components/Home/Projects";
 import Hero from "../components/Home2/Hero";
 import About from "../components/Home2/About";
+import MyStory from "../components/Home2/MyStory";
 const Home = () => {
   const isPresent = useIsPresent();
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Navbar />
       <Hero />
       <About />
+      <MyStory />
       {/* <Hero /> */}
       {/* <Projects /> */}
       <motion.div
