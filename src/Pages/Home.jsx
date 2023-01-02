@@ -4,12 +4,14 @@ import { motion, useIsPresent } from "framer-motion";
 // import Hero from "../components/Home/Hero";
 import Projects from "../components/Home/Projects";
 import Hero from "../components/Home2/Hero";
+import About from "../components/Home2/About";
 const Home = () => {
   const isPresent = useIsPresent();
   return (
     <div>
       <Navbar />
       <Hero />
+      <About />
       {/* <Hero /> */}
       {/* <Projects /> */}
       <motion.div

@@ -25,10 +25,12 @@ const Hero = () => {
                 animate={{ y: 0, opacity: 1 }}
                 exit={{ y: -10, opacity: 0 }}
                 transition={{ duration: 0.5 }}
-                className="large-texts text-[24px] text-center"
+                className=" text-[24px] text-center"
               >
                 I'm a creative{" "}
-                <span className="">&nbsp;Frontend developer&nbsp;</span>
+                <span className=" font-semibold">
+                  &nbsp;Frontend developer&nbsp;
+                </span>
                 passionate about converting ideas into standard and scalable
                 products.
               </motion.p>
@@ -56,7 +58,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="w-10 h-40  fixed 2xl:-left-10 lg:left-5 bottom-10 flex-col space-y-4">
+          <div className="w-10 h-40  fixed z-20 2xl:-left-10 lg:left-5 bottom-10 flex-col space-y-4">
             <div
               href="#_"
               class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
