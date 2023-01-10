@@ -6,6 +6,8 @@ import Projects from "../components/Home/Projects";
 import Hero from "../components/Home2/Hero";
 import About from "../components/Home2/About";
 import MyStory from "../components/Home2/MyStory";
+import MyProjects from "../components/Home2/MyProjects";
+import Contact from "../components/Home2/Contact";
 const Home = () => {
   const isPresent = useIsPresent();
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <Hero />
       <About />
       <MyStory />
+      <MyProjects />
+      <Contact />
       {/* <Hero /> */}
       {/* <Projects /> */}
       <motion.div

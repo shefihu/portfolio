@@ -96,39 +96,9 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
               >
                 <Link to={"/about"}>
                   <a className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase">
-                    <span className="text-white  mr-[11px]">01</span> About
+                    <span className="text-white  mr-[11px]">01</span> Contact
                   </a>
                 </Link>
-              </motion.li>
-              <motion.li
-                onClick={() => {
-                  setIsSidebarOpen(!isSidebarOpen);
-                }}
-                variants={itemvariants}
-                className={`relative w-full mb-[1.5rem] ${
-                  location.pathname === "/about" ? "activeLink" : ""
-                }`}
-              >
-                <Link to={"/about"}>
-                  <a className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase">
-                    <span className="text-white  mr-[11px]">02</span> about
-                  </a>
-                </Link>
-              </motion.li>
-              <motion.li
-                onClick={() => {
-                  setIsSidebarOpen(!isSidebarOpen);
-                }}
-                variants={itemvariants}
-                className={`relative w-full mb-[1.5rem] ${
-                  location.pathname === "/contact" ? "activeLink" : ""
-                }`}
-              >
-                <a href={resume}>
-                  <p className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase">
-                    <span className="text-white  mr-[11px]">03</span> Resume
-                  </p>
-                </a>
               </motion.li>
             </motion.ul>
             <motion.div className="w-full  h-10 border-t border-t-gray-200"></motion.div>
