@@ -1,6 +1,7 @@
 import { AnimatePresence } from "framer-motion";
 import { lazy, Suspense } from "react";
 import { Route, Routes, useLocation, useRoutes } from "react-router-dom";
+import SideLinks from "./global/SideLinks";
 import Spinner from "./global/Spinner";
 import About from "./Pages/About";
 
@@ -23,6 +24,7 @@ function App() {
           </Routes>
         </AnimatePresence>
       </Suspense>
+      {/* <SideLinks /> */}
     </div>
   );
 }
