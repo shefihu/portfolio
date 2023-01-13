@@ -9,17 +9,20 @@ import MyStory from "../components/Home2/MyStory";
 import MyProjects from "../components/Home2/MyProjects";
 import Contact from "../components/Home2/Contact";
 import Foote from "../components/Home2/Foote";
+import SmoothScroll from "../global/SmoothScroll";
 const Home = () => {
   const isPresent = useIsPresent();
   return (
     <div>
       <Navbar />
-      <Hero />
-      <About />
-      <MyStory />
-      <MyProjects />
-      <Contact />
-      <Foote />
+      <SmoothScroll>
+        <Hero />
+        <About />
+        <MyStory />
+        <MyProjects />
+        <Contact />
+        <Foote />
+      </SmoothScroll>
       {/* <Hero /> */}
       {/* <Projects /> */}
       <motion.div

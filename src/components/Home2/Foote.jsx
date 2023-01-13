@@ -11,30 +11,30 @@ const Foote = () => {
             "Bringing ideas to life, one pixel at a time 🤙"
           </h1>
           <div className="flex space-x-5">
-            <div
+            <a
               href="#_"
-              class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+              className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiFillGithub className="w-5 h-5" />
-            </div>
-            <div
+            </a>
+            <a
               href="#_"
-              class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+              className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiFillLinkedin className="w-5 h-5" />
-            </div>
-            <div
+            </a>
+            <a
               href="#_"
-              class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+              className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiOutlineTwitter className="w-5 h-5" />
-            </div>
-            <div
+            </a>
+            <a
               href="#_"
-              class="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
+              className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <img src={dev} alt="" className="w-5 h-5" />
-            </div>
+            </a>
           </div>
         </div>
       </div>

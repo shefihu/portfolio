@@ -291,3 +291,46 @@ code {
   z-index: 60;
   height: 100vh;
 }
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+.eye {
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100% 0px;
+  transform: rotate(45deg);
+}
+.container-eyes {
+  display: flex;
+}
+.container-eyes .eyes {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: block;
+  background-color: #fff;
+  margin: 0 10px;
+  border-radius: 50%;
+  box-shadow: 0 5px 45px rgba(0, 0, 0, 0.2), inset 0 0 15px #ffff,
+    inset 0 0 25px #dbdbdb;
+}
+.container-eyes .eyes::before {
+  content: "";
+  top: 50%;
+  left: 15px;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  position: absolute;
+  border: 4px solid skyblue;
+  box-sizing: border-box;
+}
