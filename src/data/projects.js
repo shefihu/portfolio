@@ -31,7 +31,7 @@ export const projects = [
     tools:
       "Typescript, Next.js, Css, TailwindCSS, Swiper.js, Firebase Auth API, Recoil, TMDB(The movie database) API, Git, Vercel.",
     link: "https://moviestuff.vercel.app/",
-    githubLink: "",
+    githubLink: "https://github.com/shefihu/spydex",
   },
   {
     id: "04",
@@ -42,7 +42,7 @@ export const projects = [
     tools:
       "Javascript, Reactjs, Firebase, Tailwind, Formik, Redux, Git, Netlify",
     link: "https://shopcommerce.netlify.app/",
-    githubLink: "",
+    githubLink: "https://github.com/shefihu/shopwise",
   },
   {
     id: "05",

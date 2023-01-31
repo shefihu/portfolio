@@ -62,11 +62,11 @@ const MyStory = () => {
               className="text-[18px] mt-2 "
             >
               I have had the great priviledge to work as a Frontend engineer for
-              a Musical agency, an event organizing agency, a finance solution,
-              internal management applications and others. Fast-Forward to
-              today, I work as the lead Frontend engineer at Uniskills, building
-              an accessible digital experience to connect students with
-              businesses that require their services.
+              a Trading agency, an event organizing agency, an Architectural
+              showcase agency, internal management applications and others.
+              Fast-Forward to today, I work as a Frontend engineer at ECSCORP,
+              building accessible digital experience to connect businesses that
+              require their services.
             </motion.p>
             <motion.p
               variants={variants}
@@ -154,11 +154,11 @@ const MyStory = () => {
                 className="text-[24px] mt-4 "
               >
                 I have had the great priviledge to work as a Frontend engineer
-                for a Musical agency, an event organizing agency, a finance
-                solution, internal management applications and others.
-                Fast-Forward to today, I work as the lead Frontend engineer at
-                Uniskills, building an accessible digital experience to connect
-                students with businesses that require their services.
+                for a Trading agency, an event organizing agency, an
+                Architectural showcase agency, internal management applications
+                and others. Fast-Forward to today, I work as a Frontend engineer
+                at ECSCORP, building accessible digital experience to connect
+                businesses that require their services.
               </motion.p>
               <motion.p
                 variants={variants}

@@ -12,25 +12,33 @@ const Foote = () => {
           </h1>
           <div className="flex space-x-5">
             <a
-              href="#_"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/shefihu"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiFillGithub className="w-5 h-5" />
             </a>
             <a
-              href="#_"
+              href="https://www.linkedin.com/in/shefiu-balogun-726a8a240/"
+              target="_blank"
+              rel="noreferrer"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiFillLinkedin className="w-5 h-5" />
             </a>
             <a
-              href="#_"
+              href="https://twitter.com/Shefihuuu"
+              target="_blank"
+              rel="noreferrer"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiOutlineTwitter className="w-5 h-5" />
             </a>
             <a
-              href="#_"
+              target="_blank"
+              rel="noreferrer"
+              href="https://dev.to/shefihu"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <img src={dev} alt="" className="w-5 h-5" />
@@ -45,25 +53,33 @@ const Foote = () => {
           </h1>
           <div className="flex space-x-5">
             <a
-              href="#_"
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/shefihu"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiFillGithub className="w-5 h-5" />
             </a>
             <a
-              href="#_"
+              href="https://www.linkedin.com/in/shefiu-balogun-726a8a240/"
+              target="_blank"
+              rel="noreferrer"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiFillLinkedin className="w-5 h-5" />
             </a>
             <a
-              href="#_"
+              href="https://twitter.com/Shefihuuu"
+              target="_blank"
+              rel="noreferrer"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <AiOutlineTwitter className="w-5 h-5" />
             </a>
             <a
-              href="#_"
+              target="_blank"
+              rel="noreferrer"
+              href="https://dev.to/shefihu"
               className="rounded-full cursor-pointer w-8 h-8 flex justify-center items-center border-gray-500 border hover:bg-black hover:text-white transition ease-in duration-300"
             >
               <img src={dev} alt="" className="w-5 h-5" />

@@ -24,11 +24,15 @@ const MyProjects = () => {
                       </h1>
                     </div>
                     <div className="flex space-x-3">
-                      <a href="">
+                      <a href={project.link} target="_blank" rel="noreferrer">
                         <BiLinkExternal className="w-5 h-5" />
                       </a>
                       {project?.githubLink !== undefined ? (
-                        <a href="">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <AiFillGithub className="w-5 h-5" />
                         </a>
                       ) : (
@@ -57,7 +61,7 @@ const MyProjects = () => {
           </div>
         </div>
       </div>
-      <div className="w-full h-full max-w-[1216px] mx-auto py-5 pb-20 text-black bg-white hidden lg:flex">
+      <div className="w-full h-full max-w-[85rem] mx-auto py-5 pb-20 text-black bg-white hidden lg:flex">
         <div className="w-full h-full px-3 pt-8">
           <h1 className="text-[32px] large-texts">My Projects</h1>
           <p>Each one has it's own unique ability</p>
@@ -88,11 +92,15 @@ const MyProjects = () => {
                       Skills/Tools : {project.tools}
                     </p>
                     <div className="flex space-x-3">
-                      <a href="f">
+                      <a target="_blank" rel="noreferrer" href={project.link}>
                         <BiLinkExternal className="w-5 h-5" />
                       </a>
                       {project.githubLink !== undefined ? (
-                        <a href="f">
+                        <a
+                          href={project.githubLink}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           <AiFillGithub className="w-5 h-5" />
                         </a>
                       ) : (
@@ -139,6 +147,8 @@ const MyProjects = () => {
           </div>
           <div className=" w-full h-full justify-center flex items-center">
             <a
+              target="_blank"
+              rel="noreferrer"
               href="https://github.com/shefihu"
               className="flex space-x-3 text-xl h-full items-center mt-6"
             >

@@ -94,11 +94,13 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
                   location.pathname === "/about" ? "activeLink" : ""
                 }`}
               >
-                <Link to={"/about"}>
-                  <a className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase">
-                    <span className="text-white  mr-[11px]">01</span> Contact
-                  </a>
-                </Link>
+                <a
+                  download="Shefiu Balogun Resume"
+                  href={resume}
+                  className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase"
+                >
+                  <span className="text-white  mr-[11px]">01</span> Resume
+                </a>
               </motion.li>
             </motion.ul>
             <motion.div className="w-full  h-10 border-t border-t-gray-200"></motion.div>
