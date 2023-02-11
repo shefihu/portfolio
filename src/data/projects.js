@@ -3,6 +3,7 @@ import evergreen from "./../assets/images/home/evergreen.png";
 import moviestuff from "./../assets/images/home/moviestuff.png";
 import scapewalkers from "./../assets/images/home/scapewalkers.png";
 import foodie from "./../assets/images/home/foodie.png";
+import clademy from "./../assets/images/home/clademy.png";
 export const projects = [
   {
     id: "01",
@@ -51,7 +52,16 @@ export const projects = [
       "An e-commerce website for groceries which posesses a cart, checkout system and an admin dashboard ",
     image: foodie,
     tools: "Javascript, Reactjs, Tailwind, Formik, Redux, Git, Netlify",
-    link: "https://foodiehub.netlify.app/",
+    link: "",
     githubLink: "",
+  },
+  {
+    id: "06",
+    name: "Clademy",
+    about:
+      "A Learning management system website for students to have an online classroom ",
+    image: clademy,
+    tools: "Javascript, Reactjs, Tailwind, Formik, Redux, Git, Netlify",
+    link: "",
   },
 ];

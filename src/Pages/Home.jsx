@@ -11,13 +11,39 @@ import Contact from "../components/Home2/Contact";
 import Foote from "../components/Home2/Foote";
 import SmoothScroll from "../global/SmoothScroll";
 const Home = () => {
+  const handleHomeScroll = () => {
+    const element = document.getElementById("hero");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleAboutScroll = () => {
+    const element = document.getElementById("about");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleStoryScroll = () => {
+    const element = document.getElementById("story");
+    if (element) {
+      // 👇 Will scroll smoothly to the top of the next section
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const isPresent = useIsPresent();
   return (
     <div>
-      <Navbar />
+      <Navbar
+        handleClickScroll={handleHomeScroll}
+        handleStoryScroll={handleStoryScroll}
+        handleAboutScroll={handleAboutScroll}
+      />
       <SmoothScroll>
         <Hero />
-        <About />
+        <About id="about" />
         <MyStory />
         <MyProjects />
         <Contact />

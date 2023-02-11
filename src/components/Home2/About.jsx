@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div id="about">
       {/* mobile */}
       <AnimatePresence exitBeforeEnter>
         <div className="w-full h-[49rem] relative lg:hidden flex py-10 pt-20 bg-white">

@@ -187,7 +187,7 @@ const Hero = () => {
         </div>
         {/* desktop */}
         {/* <SmoothScroll> */}
-        <div className="w-full h-[45rem] lg:flex hidden mx-auto 2xl:max-w-[110rem] lg:max-w-[85rem]">
+        <div className="w-full h-[45rem] lg:flex hidden mx-auto 2xl:max-w-[110rem] lg:max-w-[75rem]">
           <div className="w-full h-full lg:px-6 xl:px-0 flex items-center pt-20 justify-between">
             <div className="w-[47%] h-[20rem]  ">
               <div className="flex space-x-4 items-center">

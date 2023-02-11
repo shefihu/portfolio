@@ -127,7 +127,7 @@ const MyStory = () => {
         </div>
         {/* desktop */}
         <div className="w-full relative h-full bg-gray-100 py-6  lg:flex hidden">
-          <div className="w-full xl:max-w-[85rem] mx-auto flex justify-between   px-3 h-full pb-3 ">
+          <div className="w-full xl:max-w-[75rem] mx-auto flex justify-between   px-3 h-full pb-3 ">
             <h1 className="text-[28px] uppercase large-texts mt-4 font-bold">
               My <br />
               Story

@@ -2,6 +2,8 @@ import React from "react";
 import { projects } from "../../data/projects";
 import { BiArrowToRight, BiLinkExternal } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
+import { toast, ToastContainer } from "react-toastify";
+
 const MyProjects = () => {
   return (
     <div>
@@ -24,9 +26,15 @@ const MyProjects = () => {
                       </h1>
                     </div>
                     <div className="flex space-x-3">
-                      <a href={project.link} target="_blank" rel="noreferrer">
-                        <BiLinkExternal className="w-5 h-5" />
-                      </a>
+                      {project.link !== "" ? (
+                        <a target="_blank" rel="noreferrer" href={project.link}>
+                          <BiLinkExternal className="w-5 h-5" />
+                        </a>
+                      ) : (
+                        <button onClick={() => toast.success("Almost done")}>
+                          <BiLinkExternal />
+                        </button>
+                      )}
                       {project?.githubLink !== undefined ? (
                         <a
                           href={project.githubLink}
@@ -53,10 +61,10 @@ const MyProjects = () => {
           <div className=" w-full h-full justify-center flex items-center">
             <a
               href="https://github.com/shefihu"
-              className="flex space-x-3 text-xl h-full items-center mt-6"
+              className="flex space-x-6 text-xl h-full items-center mt-6"
             >
               <span>View more on my Github </span>
-              <BiArrowToRight className="animate-bounce w-6 h-6" />
+              <BiArrowToRight className="arrow w-6 h-6" />
             </a>
           </div>
         </div>
@@ -92,9 +100,16 @@ const MyProjects = () => {
                       Skills/Tools : {project.tools}
                     </p>
                     <div className="flex space-x-3">
-                      <a target="_blank" rel="noreferrer" href={project.link}>
-                        <BiLinkExternal className="w-5 h-5" />
-                      </a>
+                      {project.link !== "" ? (
+                        <a target="_blank" rel="noreferrer" href={project.link}>
+                          <BiLinkExternal className="w-5 h-5" />
+                        </a>
+                      ) : (
+                        <button onClick={() => toast.success("Almost done")}>
+                          <BiLinkExternal />
+                        </button>
+                      )}
+
                       {project.githubLink !== undefined ? (
                         <a
                           href={project.githubLink}
@@ -150,10 +165,10 @@ const MyProjects = () => {
               target="_blank"
               rel="noreferrer"
               href="https://github.com/shefihu"
-              className="flex space-x-3 text-xl h-full items-center mt-6"
+              className="flex space-x-6 text-xl h-full items-center mt-6"
             >
               <span>View more on my Github </span>
-              <BiArrowToRight className="animate-bounce w-6 h-6" />
+              <BiArrowToRight className="arrow w-6 h-6" />
             </a>
           </div>
 

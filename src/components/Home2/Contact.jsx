@@ -1,9 +1,33 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { AiFillMail, AiFillPhone } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 import { IoLocationSharp } from "react-icons/io5";
-
+import emailjs from "@emailjs/browser";
+import { toast } from "react-toastify";
+import { ClipLoader } from "react-spinners";
 const Contact = () => {
+  const [loading, setLoading] = useState(false);
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    emailjs
+      .sendForm(
+        "service_841uzkk",
+        "template_esk1364",
+        form.current,
+        "9Cw-2dvwfHm1z0Io9"
+      )
+      .then(
+        (result) => {
+          setLoading(false);
+          toast.success("email sent successfully");
+        },
+        (error) => {
+          setLoading(false);
+        }
+      );
+  };
   return (
     <div>
       <div className="w-full h-full py-5  text-black bg-gray-200 flex lg:hidden">
@@ -112,9 +136,15 @@ const Contact = () => {
               <h1 className="text-xl">Message</h1>
               <textarea className="border-b resize-none py-2 px-3 border-b-black outline-none bg-transparent"></textarea>
             </div>
-            <button className="w-[14rem] border border-black rounded-full py-3">
-              Send Message
-            </button>
+            {!loading ? (
+              <button className="w-[14rem] border border-black rounded-full py-3">
+                Send Message
+              </button>
+            ) : (
+              <button className="w-[14rem] border border-black rounded-full py-3">
+                <ClipLoader size={20} color="black" />
+              </button>
+            )}
           </form>
         </div>
       </div>
