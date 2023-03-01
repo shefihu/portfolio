@@ -41,14 +41,14 @@ const Home = () => {
         handleStoryScroll={handleStoryScroll}
         handleAboutScroll={handleAboutScroll}
       />
-      <SmoothScroll>
-        <Hero />
-        <About id="about" />
-        <MyStory />
-        <MyProjects />
-        <Contact />
-        <Foote />
-      </SmoothScroll>
+      {/* <SmoothScroll> */}
+      <Hero />
+      <About id="about" />
+      <MyStory />
+      <MyProjects />
+      <Contact />
+      <Foote />
+      {/* </SmoothScroll> */}
       {/* <Hero /> */}
       {/* <Projects /> */}
       <motion.div
