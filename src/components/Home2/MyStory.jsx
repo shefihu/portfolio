@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 import { story } from "../../data/mystory";
-const MyStory = () => {
+function MyStory({}, ref3) {
   //   const [index, setIndex] = useState(1);
   //   const [joinedDetails, setJoinedDetails] = useState("");
   //   const services = story[index];
@@ -36,7 +36,10 @@ const MyStory = () => {
   return (
     <div>
       <AnimatePresence>
-        <div className="w-full relative h-full bg-gray-100 py-6 flex lg:hidden">
+        <div
+          ref={ref3}
+          className="w-full relative h-full bg-gray-100 py-6 flex lg:hidden"
+        >
           <div className="w-full  flex flex-col  px-3 h-full pb-3 ">
             <h1 className="text-[23px] uppercase large-texts font-bold">
               My <br />
@@ -126,7 +129,10 @@ const MyStory = () => {
           <div className="w-10 h-10 rounded-full   absolute right-2 bg-gradient-to-r  from-gray-300 top-[53rem]"></div>
         </div>
         {/* desktop */}
-        <div className="w-full relative h-full bg-gray-100 py-6  lg:flex hidden">
+        <div
+          ref={ref3}
+          className="w-full relative h-full bg-gray-100 py-6  lg:flex hidden"
+        >
           <div className="w-full xl:max-w-[75rem] mx-auto flex justify-between   px-3 h-full pb-3 ">
             <h1 className="text-[28px] uppercase large-texts mt-4 font-bold">
               My <br />
@@ -222,6 +228,6 @@ const MyStory = () => {
       </AnimatePresence>
     </div>
   );
-};
+}
 
-export default MyStory;
+export default React.forwardRef(MyStory);

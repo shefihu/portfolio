@@ -5,32 +5,31 @@ import { motion, useIsPresent } from "framer-motion";
 import Projects from "../components/Home/Projects";
 import Hero from "../components/Home2/Hero";
 import About from "../components/Home2/About";
+// import MyStory from "../components/Home2/MyStory";
+// import MyProjects from "../components/Home2/MyProjects";
+import Contact from "../components/Home2/Contact";
 import MyStory from "../components/Home2/MyStory";
 import MyProjects from "../components/Home2/MyProjects";
-import Contact from "../components/Home2/Contact";
 import Foote from "../components/Home2/Foote";
 import SmoothScroll from "../global/SmoothScroll";
 const Home = () => {
-  const handleAboutScroll = () => {
-    const element = document.getElementById("about");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-  const handleStoryScroll = () => {
-    const element = document.getElementById("story");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const ref = useRef(null);
   const ref2 = useRef(null);
   const ref3 = useRef(null);
+  const ref4 = useRef(null);
 
   const handleHomeScroll = () => {
     ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleAbout = () => {
+    ref2.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleStory = () => {
+    // console.log("object");
+    ref3.current?.scrollIntoView({ behavior: "smooth" });
+  };
+  const handleContact = () => {
+    ref4.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   const isPresent = useIsPresent();
@@ -38,15 +37,16 @@ const Home = () => {
     <div>
       <Navbar
         handleClickScroll={handleHomeScroll}
-        // handleStoryScroll={handleStoryScroll}
-        // handleAboutScroll={handleAboutScroll}
+        handleStoryScroll={handleStory}
+        handleAboutScroll={handleAbout}
+        handleContact={handleContact}
       />
       {/* <SmoothScroll> */}
-      <Hero ref={ref} />
-      <About id="about" />
-      <MyStory />
-      <MyProjects />
-      <Contact />
+      <Hero />
+      <About id="about" ref={ref2} />
+      <MyStory ref={ref3} />
+      <MyProjects ref={ref} />
+      <Contact ref={ref4} />
       <Foote />
       {/* </SmoothScroll> */}
       {/* <Hero /> */}

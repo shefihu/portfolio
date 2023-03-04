@@ -1,12 +1,12 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import { projects } from "../../data/projects";
 import { BiArrowToRight, BiLinkExternal } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
 import { toast, ToastContainer } from "react-toastify";
 
-const MyProjects = () => {
+function MyProjects({}, ref) {
   return (
-    <div>
+    <div ref={ref}>
       <div className="w-full h-full py-5 pb-20 text-black bg-white flex lg:hidden">
         <div className="w-full h-full px-3 pt-8">
           <h1 className="text-[32px] large-texts">My Projects</h1>
@@ -226,6 +226,6 @@ const MyProjects = () => {
       </div>
     </div>
   );
-};
+}
 
-export default MyProjects;
+export default React.forwardRef(MyProjects);

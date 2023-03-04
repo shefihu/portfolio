@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 import resume from "../assets/pdf/RotimiShefiuBalogunResume.pdf";
 import { HiMenuAlt2 } from "react-icons/hi";
 import Sidebar from "./Sidebar";
-const Navbar = ({ handleClickScroll, handleAboutScroll }) => {
+const Navbar = ({
+  handleClickScroll,
+  handleAboutScroll,
+  handleStoryScroll,
+  handleContact,
+}) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   useEffect(() => {
@@ -37,18 +42,18 @@ const Navbar = ({ handleClickScroll, handleAboutScroll }) => {
             {/* <li className="headerLink">
               <button onClick={handleClickScroll}>Home</button>
             </li> */}
-            {/* <li className="headerLink">
+            <li className="headerLink">
               <button onClick={handleAboutScroll}>About</button>
             </li>
             <li className="headerLink">
-              <Link href="/">Works</Link>
+              <button onClick={handleStoryScroll}>My Story</button>
             </li>
             <li className="headerLink">
-              <a href="/">Experience</a>
+              <button onClick={handleClickScroll}>Projects</button>
             </li>
             <li className="headerLink">
-              <a href="/">Contact</a>
-            </li> */}
+              <button onClick={handleContact}>Contact</button>
+            </li>
             <a
               download="Shefiu Balogun Resume"
               href={resume}

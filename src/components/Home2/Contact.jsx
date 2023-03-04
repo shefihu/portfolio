@@ -5,7 +5,7 @@ import { IoLocationSharp } from "react-icons/io5";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 import { ClipLoader } from "react-spinners";
-const Contact = () => {
+const Contact = ({}, ref4) => {
   const [loading, setLoading] = useState(false);
   const form = useRef();
   const sendEmail = (e) => {
@@ -100,7 +100,10 @@ const Contact = () => {
           </form>
         </div>
       </div> */}
-      <div className="w-full max-w-[85rem] h-full py-5 mx-auto  text-black bg-gray-100 rounded-lg flex">
+      <div
+        ref={ref4}
+        className="w-full max-w-[85rem] h-full py-5 mx-auto  text-black bg-gray-100 rounded-lg flex"
+      >
         <div className="w-full h-full px-3 pt-8">
           <div className="w-full flex flex-col items-center space-y-4 justify-center">
             <h1 className="text-3xl large-texts">Get in touch!</h1>
@@ -134,6 +137,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="user_name"
+                required
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -142,6 +146,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
+                required
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -150,6 +155,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="subject"
+                required
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -157,6 +163,7 @@ const Contact = () => {
               <h1 className="text-xl">Message</h1>
               <textarea
                 name="message"
+                required
                 className="border-b resize-none py-2 px-3 border-b-black outline-none bg-transparent"
               ></textarea>
             </div>
@@ -176,4 +183,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default React.forwardRef(Contact);

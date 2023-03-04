@@ -1,12 +1,15 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React from "react";
 
-const About = () => {
+const About = ({}, ref2) => {
   return (
     <div id="about">
       {/* mobile */}
       <AnimatePresence exitBeforeEnter>
-        <div className="w-full h-[49rem] relative lg:hidden flex py-10 pt-20 bg-white">
+        <div
+          ref={ref2}
+          className="w-full h-[49rem] relative lg:hidden flex py-10 pt-20 bg-white"
+        >
           <div className="w-full h-full  ">
             <div className="w-full h-40 ">
               <motion.h1
@@ -57,7 +60,10 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full lg:flex items-center justify-center">
+        <div
+          ref={ref2}
+          className="w-full h-full lg:flex items-center justify-center"
+        >
           <div className="w-full h-[59rem] max-w-[40rem] relative lg:flex hidden py-10 pt-20 bg-white">
             <div className="w-full h-full  ">
               <div className="w-full h-40 ">
@@ -116,4 +122,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default React.forwardRef(About);
