@@ -32,7 +32,7 @@ const Contact = () => {
   };
   return (
     <div>
-      <div className="w-full h-full py-5  text-black bg-gray-200 flex lg:hidden">
+      {/* <div className="w-full h-full py-5  text-black bg-gray-200 flex lg:hidden">
         <div className="w-full h-full px-3 pt-8">
           <div className="w-full flex flex-col items-center space-y-4 justify-center">
             <h1 className="text-3xl large-texts">Get in touch!</h1>
@@ -99,8 +99,8 @@ const Contact = () => {
             )}
           </form>
         </div>
-      </div>
-      <div className="w-full max-w-[85rem] h-full py-5 mx-auto  text-black bg-gray-100 rounded-lg hidden lg:flex">
+      </div> */}
+      <div className="w-full max-w-[85rem] h-full py-5 mx-auto  text-black bg-gray-100 rounded-lg flex">
         <div className="w-full h-full px-3 pt-8">
           <div className="w-full flex flex-col items-center space-y-4 justify-center">
             <h1 className="text-3xl large-texts">Get in touch!</h1>
