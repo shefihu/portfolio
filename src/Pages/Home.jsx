@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Navbar from "../layout/Navbar";
 import { motion, useIsPresent } from "framer-motion";
 // import Hero from "../components/Home/Hero";
@@ -11,13 +11,6 @@ import Contact from "../components/Home2/Contact";
 import Foote from "../components/Home2/Foote";
 import SmoothScroll from "../global/SmoothScroll";
 const Home = () => {
-  const handleHomeScroll = () => {
-    const element = document.getElementById("hero");
-    if (element) {
-      // 👇 Will scroll smoothly to the top of the next section
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
   const handleAboutScroll = () => {
     const element = document.getElementById("about");
     if (element) {
@@ -32,17 +25,24 @@ const Home = () => {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const ref = useRef(null);
+  const ref2 = useRef(null);
+  const ref3 = useRef(null);
+
+  const handleHomeScroll = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
 
   const isPresent = useIsPresent();
   return (
     <div>
       <Navbar
         handleClickScroll={handleHomeScroll}
-        handleStoryScroll={handleStoryScroll}
-        handleAboutScroll={handleAboutScroll}
+        // handleStoryScroll={handleStoryScroll}
+        // handleAboutScroll={handleAboutScroll}
       />
       {/* <SmoothScroll> */}
-      <Hero />
+      <Hero ref={ref} />
       <About id="about" />
       <MyStory />
       <MyProjects />

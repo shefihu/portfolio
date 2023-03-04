@@ -5,6 +5,7 @@ import { ToastContainer } from "react-toastify";
 import SideLinks from "./global/SideLinks";
 import Spinner from "./global/Spinner";
 import About from "./Pages/About";
+import NotFound from "./Pages/NotFound";
 
 const Home = lazy(() => {
   return new Promise((resolve) => {
@@ -32,6 +33,8 @@ function App() {
         <AnimatePresence mode="wait" initial={false}>
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+
             <Route path="about" element={<About />} />
           </Routes>
         </AnimatePresence>

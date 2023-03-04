@@ -73,7 +73,7 @@ const MyProjects = () => {
         <div className="w-full h-full px-3 pt-8">
           <h1 className="text-[32px] large-texts">My Projects</h1>
           <p>Each one has it's own unique ability</p>
-          <div className="w-full  h-full grid  grid-cols-1 gap-y-16">
+          <div className="w-full  h-full grid mt-4 grid-cols-1 gap-y-16">
             {projects.map((project, index) => {
               return (
                 <div
@@ -85,7 +85,7 @@ const MyProjects = () => {
                     <img
                       src={project.image}
                       alt=""
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-top"
                     />
                   </div>
                   <div className="flex-col w-[40%] h-full justify-center space-y-6 mt-5 items-center">

@@ -13,17 +13,19 @@ const Contact = () => {
     setLoading(true);
     emailjs
       .sendForm(
-        "service_841uzkk",
-        "template_esk1364",
+        "service_g9jjl69",
+        "template_2n53opl",
         form.current,
-        "9Cw-2dvwfHm1z0Io9"
+        "yfAcKoDw3LCMoKXfj"
       )
       .then(
         (result) => {
           setLoading(false);
-          toast.success("email sent successfully");
+          toast.success("Email sent successfully");
         },
         (error) => {
+          toast.success(error.text);
+          // console.log(error);
           setLoading(false);
         }
       );
@@ -54,11 +56,12 @@ const Contact = () => {
               <h1>shefiub0@gmail.com</h1>
             </div>
           </div>
-          <form className="w-full space-y-7 ">
+          <form ref={form} onSubmit={sendEmail} className="w-full space-y-7 ">
             <div className="w-full flex flex-col">
               <h1 className="text-xl">Name</h1>
               <input
                 type="text"
+                name="user_name"
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -66,6 +69,7 @@ const Contact = () => {
               <h1 className="text-xl">Email Address</h1>
               <input
                 type="email"
+                name="email"
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -73,16 +77,26 @@ const Contact = () => {
               <h1 className="text-xl">Subject</h1>
               <input
                 type="text"
+                name="subject"
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
             <div className="w-full flex flex-col">
               <h1 className="text-xl">Message</h1>
-              <textarea className="border-b resize-none py-2 px-3 border-b-black outline-none bg-transparent"></textarea>
+              <textarea
+                name="message"
+                className="border-b resize-none py-2 px-3 border-b-black outline-none bg-transparent"
+              ></textarea>
             </div>
-            <button className="w-[14rem] border border-black rounded-full py-3">
-              Send Message
-            </button>
+            {!loading ? (
+              <button className="w-[14rem] border border-black rounded-full py-3">
+                Send Message
+              </button>
+            ) : (
+              <button className="w-[14rem] border border-black rounded-full py-3">
+                <ClipLoader size={20} color="black" />
+              </button>
+            )}
           </form>
         </div>
       </div>
@@ -110,11 +124,16 @@ const Contact = () => {
               <h1>shefiub0@gmail.com</h1>
             </div>
           </div>
-          <form className="w-full space-y-7 max-w-[65rem] mx-auto ">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="w-full space-y-7 max-w-[65rem] mx-auto "
+          >
             <div className="w-full flex flex-col">
               <h1 className="text-xl">Name</h1>
               <input
                 type="text"
+                name="user_name"
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -122,6 +141,7 @@ const Contact = () => {
               <h1 className="text-xl">Email Address</h1>
               <input
                 type="email"
+                name="email"
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
@@ -129,12 +149,16 @@ const Contact = () => {
               <h1 className="text-xl">Subject</h1>
               <input
                 type="text"
+                name="subject"
                 className="border-b py-2 px-3 border-b-black outline-none bg-transparent"
               />
             </div>
             <div className="w-full flex flex-col">
               <h1 className="text-xl">Message</h1>
-              <textarea className="border-b resize-none py-2 px-3 border-b-black outline-none bg-transparent"></textarea>
+              <textarea
+                name="message"
+                className="border-b resize-none py-2 px-3 border-b-black outline-none bg-transparent"
+              ></textarea>
             </div>
             {!loading ? (
               <button className="w-[14rem] border border-black rounded-full py-3">

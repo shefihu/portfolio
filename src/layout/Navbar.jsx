@@ -34,10 +34,10 @@ const Navbar = ({ handleClickScroll, handleAboutScroll }) => {
           </div>
 
           <ul className="hidden items-center space-x-10 md:flex">
-            <li className="headerLink">
+            {/* <li className="headerLink">
               <button onClick={handleClickScroll}>Home</button>
-            </li>
-            <li className="headerLink">
+            </li> */}
+            {/* <li className="headerLink">
               <button onClick={handleAboutScroll}>About</button>
             </li>
             <li className="headerLink">
@@ -48,7 +48,7 @@ const Navbar = ({ handleClickScroll, handleAboutScroll }) => {
             </li>
             <li className="headerLink">
               <a href="/">Contact</a>
-            </li>
+            </li> */}
             <a
               download="Shefiu Balogun Resume"
               href={resume}

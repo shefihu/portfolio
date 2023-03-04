@@ -139,7 +139,7 @@ const MyStory = () => {
                 whileInView="animate"
                 className="text-[24px] mt-4"
               >
-                Hello! My name is <span className="font-bold">Shefiu</span>, I
+                Hello! My name is <span className="font-bold">Rotimi</span>, I
                 enjoy converting ideas into real life products and building
                 solutions that runs on the internet. Over the last 3 years, i've
                 developed products for businesses around the world, providing

@@ -4,6 +4,7 @@ import moviestuff from "./../assets/images/home/moviestuff.png";
 import scapewalkers from "./../assets/images/home/scapewalkers.png";
 import foodie from "./../assets/images/home/foodie.png";
 import clademy from "./../assets/images/home/clademy.png";
+import finbank from "./../assets/images/home/finbank.png";
 export const projects = [
   {
     id: "01",
@@ -61,7 +62,15 @@ export const projects = [
     about:
       "A Learning management system website for students to have an online classroom ",
     image: clademy,
-    tools: "Javascript, Reactjs, Tailwind, Formik, Redux, Git, Netlify",
+    tools: "Javascript, Reactjs, Tailwind, Formik, Redux, Git, Netlify, Framer",
+    link: "",
+  },
+  {
+    id: "07",
+    name: "Finbank",
+    about: "A fintech landing page",
+    image: finbank,
+    tools: "Javascript, Reactjs, Tailwind, Git, Netlify",
     link: "",
   },
 ];

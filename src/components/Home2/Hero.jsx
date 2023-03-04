@@ -100,7 +100,7 @@ const Hero = () => {
                 transition={{ duration: 0.2 }}
                 className="text-[42px] font-[600] text-center large-texts "
               >
-                Shefiu R.B
+                Rotimi S.B
               </motion.h1>
               <motion.p
                 initial={{ y: 10, opacity: 0 }}
@@ -206,9 +206,9 @@ const Hero = () => {
                   animate={{ y: 0, opacity: 1 }}
                   exit={{ y: -10, opacity: 0 }}
                   transition={{ duration: 0.2 }}
-                  className="lg:text-[50px] xl:text-[82px] font-[600]  large-texts "
+                  className="lg:text-[50px] xl:text-[72px] 2xl:text-[82px] font-[600]  large-texts "
                 >
-                  Shefiu R.B
+                  Rotimi S.B
                 </motion.h1>
                 <div className="container-eyes">
                   <div className="eyes"></div>
