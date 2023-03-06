@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import resume from "../assets/pdf/RotimiShefiuBalogunResume.pdf";
 import { HiMenuAlt2 } from "react-icons/hi";
 import Sidebar from "./Sidebar";
@@ -10,6 +10,7 @@ const Navbar = ({
   handleContact,
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -42,18 +43,33 @@ const Navbar = ({
             {/* <li className="headerLink">
               <button onClick={handleClickScroll}>Home</button>
             </li> */}
-            <li className="headerLink">
-              <button onClick={handleAboutScroll}>About</button>
-            </li>
-            <li className="headerLink">
-              <button onClick={handleStoryScroll}>My Story</button>
-            </li>
-            <li className="headerLink">
-              <button onClick={handleClickScroll}>Projects</button>
-            </li>
-            <li className="headerLink">
-              <button onClick={handleContact}>Contact</button>
-            </li>
+            {location.pathname !== "/experiences" ? (
+              <>
+                {" "}
+                <li className="headerLink">
+                  <button onClick={handleAboutScroll}>About</button>
+                </li>
+                <li className="headerLink">
+                  <button onClick={handleStoryScroll}>My Story</button>
+                </li>
+                <li className="headerLink">
+                  <button onClick={handleClickScroll}>Projects</button>
+                </li>
+                <li className="headerLink">
+                  <button onClick={handleContact}>Contact</button>
+                </li>
+                <li className="headerLink">
+                  <Link to={"/experiences"}>Experiences</Link>
+                </li>
+              </>
+            ) : (
+              <>
+                <li className="headerLink">
+                  <Link to={"/"}>Home</Link>
+                </li>
+              </>
+            )}
+
             <a
               download="Shefiu Balogun Resume"
               href={resume}

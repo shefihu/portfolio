@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "../layout/Navbar";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
+import { BsChevronDown } from "react-icons/bs";
 const About = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -13,9 +14,17 @@ const About = () => {
   return (
     <div>
       <Navbar />
-      <div className="w-full xl:max-w-[75rem] bg-gray-300 2xl:max-w-[110rem] mx-auto h-[60rem] py-20">
-        <div className="w-full h-[35rem] flex justify-between bg-yellow-300">
-          <div className="w-[40%] h-[20rem] bg-red-300"></div>
+      <div className="w-full h-full">
+        <div className="w-full h-screen bg-gray-200 flex justify-center items-center relative">
+          <div className="md:w-[400px]  md:h-[400px] w-[300px] h-[300px] flex title justify-center items-center  rounded-full bg-white">
+            <div className="md:w-[150px] md:h-[150px] w-[100px] h-[100px] absolute  rounded-full bg-gray-200"></div>
+            <span className=" absolute   font-bold text-[52px]">
+              Experiences
+            </span>
+          </div>
+          <div className="w-full flex justify-center bottom-4  absolute">
+            <BsChevronDown className="w-12 chevron h-12" />
+          </div>
         </div>
       </div>{" "}
       <motion.div

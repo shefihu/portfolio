@@ -387,7 +387,69 @@ code {
 }
 /* /right bounce */
 
+@-webkit-keyframes bounceup {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  60% {
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+}
+@-moz-keyframes bounceup {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  60% {
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+}
+@keyframes bounceup {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -ms-transform: translateY(-40px);
+    transform: translateY(-40px);
+  }
+  60% {
+    -ms-transform: translateY(-35px);
+    transform: translateY(-35px);
+  }
+}
 .arrow {
   -webkit-animation: bounceRight 2s infinite;
   animation: bounceRight 2s infinite;
+}
+.chevron {
+  /* transform: translateX(50%, 50%); */
+  -webkit-animation: bounceup 2s infinite;
+  animation: bounceup 2s infinite;
+}
+.experiencecircle {
+  transform: translateX(50%);
+  transform: translateY(50%);
 }

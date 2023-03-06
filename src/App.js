@@ -35,7 +35,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
 
-            <Route path="about" element={<About />} />
+            <Route path="experiences" element={<About />} />
           </Routes>
         </AnimatePresence>
       </Suspense>
