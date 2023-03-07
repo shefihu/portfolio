@@ -1,5 +1,5 @@
-import { AnimatePresence } from "framer-motion";
-import { lazy, Suspense } from "react";
+import { AnimatePresence,motion,useMotionValue,useSpring } from "framer-motion";
+import { lazy, Suspense,useEffect } from "react";
 import { Route, Routes, useLocation, useRoutes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import SideLinks from "./global/SideLinks";
@@ -14,6 +14,26 @@ const Home = lazy(() => {
 });
 // const routes = [{ path: "", element: <Home /> }];
 function App() {
+  const cursorX = useMotionValue(-100);
+  const cursorY = useMotionValue(-100);
+
+  const springConfig = { damping: 25, stiffness: 700 };
+  const cursorXSpring = useSpring(cursorX, springConfig);
+  const cursorYSpring = useSpring(cursorY, springConfig);
+
+  useEffect(() => {
+    const moveCursor = (e) => {
+      cursorX.set(e.clientX - 16);
+      cursorY.set(e.clientY - 16);
+    };
+
+    window.addEventListener("mousemove", moveCursor);
+
+    return () => {
+      window.removeEventListener("mousemove", moveCursor);
+    };
+  }, []);
+
   // const element = useRoutes(routes);
   const location = useLocation();
   return (
@@ -39,6 +59,13 @@ function App() {
           </Routes>
         </AnimatePresence>
       </Suspense>
+      <motion.div
+        className="cursor"
+        style={{
+          translateX: cursorXSpring,
+          translateY: cursorYSpring,
+        }}
+      />
       {/* <SideLinks /> */}
     </div>
   );

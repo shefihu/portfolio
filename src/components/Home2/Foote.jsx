@@ -11,16 +11,16 @@ const Foote = () => {
       <div
         className={
           location.pathname !== "/experiences"
-            ? "w-full px-3 flex lg:hidden h-[20rem] bg-gray-200"
+            ? "w-full px-3 flex lg:hidden h-[30rem] bg-black text-white"
             : "w-full px-3 flex lg:hidden h-[30rem] bg-black text-white"
         }
       >
         <div className="w-full h-full flex flex-col space-y-8 items-center justify-center">
           <div className="w-full max-w-[40rem] relative flex justify-center">
-            <h1 className="experiences text-[40px] z-10 font-bold">
+            <h1 className="experiences md:text-[60px] text-[34px] z-10 font-bold">
               Let's Work Together
             </h1>
-            <div className="w-[50px] absolute right-0 h-[50px] bg-gradient-to-r  from-gray-500 via-gray-600 rounded-full to-gray-700"></div>
+            <div className="md:w-[70px] md:h-[70px] w-[40px] absolute right-0 h-[40px] bg-gradient-to-r  from-gray-500 via-gray-600 rounded-full to-gray-700"></div>
           </div>
           <h1 className="text-2xl text-center">
             "Bringing ideas to life, one pixel at a time 🤙"

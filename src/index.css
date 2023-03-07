@@ -475,3 +475,15 @@ code {
   transform: translateX(50%);
   transform: translateY(50%);
 }
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: white;
+  mix-blend-mode: difference;
+  z-index: 999;
+  pointer-events: none;
+}
