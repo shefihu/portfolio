@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../layout/Navbar";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { BsChevronDown } from "react-icons/bs";
@@ -6,13 +6,18 @@ import MyExperiences from "../components/About/MyExperiences";
 import Foote from "../components/Home2/Foote";
 const About = () => {
   const { scrollYProgress } = useScroll();
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      behavior: "smooth",
+    });
+  });
   const scaleX = useSpring(scrollYProgress, {
     stiffness: 100,
     damping: 30,
     restDelta: 0.001,
   });
   const isPresent = useIsPresent();
-
   return (
     <div>
       <Navbar />
