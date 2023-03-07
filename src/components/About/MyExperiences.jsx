@@ -7,7 +7,7 @@ const MyExperiences = () => {
         <div className="w-full max-w-[80%] space-y-10 h-full  pt-24 mx-auto">
           <div className="w-full lg:flex-row flex-col  flex justify-between">
             <span className="text-[13px] font-extralight text-gray-500 experiences">
-              / 01 &nbsp; &nbsp;&nbsp;&nbsp; 11 August 2022 - January 2023
+              / 01 &nbsp; &nbsp;&nbsp;&nbsp; 15 February 2023 - Present
             </span>
             <div className="lg:w-[70%] experiences">
               <h1 className="text-[24px] font-bold">Frontendlabs</h1>
@@ -31,7 +31,7 @@ const MyExperiences = () => {
           </div>
           <div className="w-full lg:flex-row flex-col  flex justify-between">
             <span className="text-[13px] font-extralight text-gray-500 experiences">
-              / 01 &nbsp; &nbsp;&nbsp;&nbsp; 11 August 2022 - January 2023
+              / 01 &nbsp; &nbsp;&nbsp;&nbsp; 23 November 2022 - Present
             </span>
             <div className="lg:w-[70%] experiences">
               <h1 className="text-[24px] font-bold">EvergreenFFX</h1>

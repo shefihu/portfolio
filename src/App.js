@@ -1,5 +1,10 @@
-import { AnimatePresence,motion,useMotionValue,useSpring } from "framer-motion";
-import { lazy, Suspense,useEffect } from "react";
+import {
+  AnimatePresence,
+  motion,
+  useMotionValue,
+  useSpring,
+} from "framer-motion";
+import { lazy, Suspense, useEffect } from "react";
 import { Route, Routes, useLocation, useRoutes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import SideLinks from "./global/SideLinks";
@@ -60,7 +65,7 @@ function App() {
         </AnimatePresence>
       </Suspense>
       <motion.div
-        className="cursor"
+        className="cursor lg:flex hidden "
         style={{
           translateX: cursorXSpring,
           translateY: cursorYSpring,
