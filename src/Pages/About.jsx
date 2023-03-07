@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../layout/Navbar";
 import { motion, useIsPresent, useScroll, useSpring } from "framer-motion";
 import { BsChevronDown } from "react-icons/bs";
+import MyExperiences from "../components/About/MyExperiences";
+import Foote from "../components/Home2/Foote";
 const About = () => {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
@@ -15,9 +17,9 @@ const About = () => {
     <div>
       <Navbar />
       <div className="w-full h-full">
-        <div className="w-full h-screen bg-gray-200 flex justify-center items-center relative">
-          <div className="md:w-[400px]  md:h-[400px] w-[300px] h-[300px] flex title justify-center items-center  rounded-full bg-white">
-            <div className="md:w-[150px] md:h-[150px] w-[100px] h-[100px] absolute  rounded-full bg-gray-200"></div>
+        <div className="w-full h-screen bg-white flex justify-center items-center relative">
+          <div className="md:w-[400px]  md:h-[400px] w-[300px] h-[300px] flex title justify-center items-center  rounded-full bg-gray-200">
+            <div className="md:w-[150px] md:h-[150px] w-[100px] h-[100px] absolute  rounded-full bg-white"></div>
             <span className=" absolute   font-bold text-[52px]">
               Experiences
             </span>
@@ -26,6 +28,8 @@ const About = () => {
             <BsChevronDown className="w-12 chevron h-12" />
           </div>
         </div>
+        <MyExperiences />
+        <Foote />
       </div>{" "}
       <motion.div
         initial={{ scaleX: 1 }}
