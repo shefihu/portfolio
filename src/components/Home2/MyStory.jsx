@@ -53,7 +53,7 @@ function MyStory({}, ref3) {
             >
               Hello! My name is <span className="font-bold">Shefiu</span>, I
               enjoy converting ideas into real life products and building
-              solutions that runs on the internet. Over the last 3 years, i've
+              solutions that runs on the internet. Over the years, i've
               developed products for businesses around the world, providing
               solutions on small business websites to enteprise web applications
               with focus on quality, accessibility and fast user experiences.
@@ -147,7 +147,7 @@ function MyStory({}, ref3) {
               >
                 Hello! My name is <span className="font-bold">Rotimi</span>, I
                 enjoy converting ideas into real life products and building
-                solutions that runs on the internet. Over the last 3 years, i've
+                solutions that runs on the internet. Over the years, i've
                 developed products for businesses around the world, providing
                 solutions on small business websites to enteprise web
                 applications with focus on quality, accessibility and fast user

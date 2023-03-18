@@ -14,9 +14,10 @@ const Spinner = () => {
     // }
   }, [filled, isRunning]);
   const isPresent = useIsPresent();
+
   return (
     <div>
-      <AnimatePresence mode="wait" initial={false}>
+      <AnimatePresence initial={true}>
         <motion.div className=" w-full h-screen flex space-x-4 flex-col justify-center items-center bg-black">
           {/* <div className="w-60 bg-gray-300 h-10 rounded-l-xl rounded-r-xl"></div> */}
           <div className="hexathron w-full "></div>
@@ -32,7 +33,7 @@ const Spinner = () => {
             </motion.span>
           </div>
         </motion.div>
-        {/* {countdownFinished && (
+        {filled === 100 && (
           <motion.div
             initial={{ scaleX: 1 }}
             animate={{
@@ -46,7 +47,7 @@ const Spinner = () => {
             style={{ originX: isPresent ? 0 : 1 }}
             className="privacy-screen"
           />
-        )} */}
+        )}
       </AnimatePresence>
     </div>
   );
