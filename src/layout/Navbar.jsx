@@ -36,7 +36,9 @@ const Navbar = ({
       >
         <div className="w-full h-full flex justify-between items-center 2xl:max-w-[110rem] max-w-[85rem] mx-auto">
           <div className="md:flex hidden items-center space-x-2 md:space-x-10">
-            <h1 className="xl:text-4xl lg:text-3xl text-4xl font-bold ">HEX</h1>
+            <a href="/" className="xl:text-4xl lg:text-3xl text-4xl font-bold ">
+              HEX
+            </a>
           </div>
 
           <ul className="hidden items-center space-x-10 md:flex">

@@ -74,8 +74,8 @@ const Foote = () => {
       <div
         className={
           location.pathname !== "/experiences"
-            ? "w-full px-3 hidden lg:flex h-[20rem] bg-gray-200"
-            : "w-full px-3 hidden lg:flex h-[30rem] bg-black text-white"
+            ? "w-full px-3 hidden lg:flex h-[30rem] bg-black mt-4 text-white"
+            : "w-full px-3 hidden lg:flex h-[30rem] bg-black  text-white"
         }
       >
         <div className="w-full h-full flex flex-col space-y-8 items-center justify-center">

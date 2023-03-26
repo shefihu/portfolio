@@ -1,5 +1,6 @@
 import shopwise from "./../assets/images/home/shopwise.png";
 import evergreen from "./../assets/images/home/evergreen.png";
+import evergreengiant from "./../assets/images/home/evergreengiant.png";
 import moviestuff from "./../assets/images/home/moviestuff.png";
 import scapewalkers from "./../assets/images/home/scapewalkers.png";
 import foodie from "./../assets/images/home/foodie.png";
@@ -23,6 +24,15 @@ export const projects = [
     image: scapewalkers,
     tools: "undisclosed",
     link: "https://www.scapewalkers.com/",
+  },
+  {
+    id: "02",
+    name: "Evergreen Giant",
+    about:
+      "I led the frontend development of an automated trading system used by beginner and exper traders to win at forex trading ",
+    image: evergreengiant,
+    tools: "undisclosed",
+    link: "https://evergreenffxgiant.com/",
   },
   {
     id: "03",
@@ -63,7 +73,8 @@ export const projects = [
       "A Learning management system website for students to have an online classroom ",
     image: clademy,
     tools: "Javascript, Reactjs, Tailwind, Formik, Redux, Git, Netlify, Framer",
-    link: "",
+    link: "https://clademy.netlify.app/",
+    githubLink: "https://github.com/shefihu/clademy",
   },
   {
     id: "07",
