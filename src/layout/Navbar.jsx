@@ -73,8 +73,11 @@ const Navbar = ({
             )}
 
             <a
-              download="Shefiu Balogun Resume"
-              href={resume}
+              // download="Shefiu Balogun Resume"
+              // href={resume}
+              target="_blank"
+              rel="noreferrer"
+              href="https://docs.google.com/document/d/1ONiVVsa0XzVnTfwrYhB_2FzQfukflchZYqcY34kgHJ4/edit?usp=share_link"
               className={`btnnn w-32 py-2 flex justify-center border transition ease-out duration-500 border-black ${
                 isScrolled &&
                 "transition ease-in duration-300 bg-white text-black"

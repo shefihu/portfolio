@@ -114,8 +114,11 @@ const Sidebar = ({ setIsSidebarOpen, isSidebarOpen }) => {
                 }`}
               >
                 <a
-                  download="Shefiu Balogun Resume"
-                  href={resume}
+                  // download="Shefiu Balogun Resume"
+                  // href={resume}
+                  href="https://docs.google.com/document/d/1ONiVVsa0XzVnTfwrYhB_2FzQfukflchZYqcY34kgHJ4/edit?usp=share_link"
+                  target='_blank'
+                  rel="noreferrer"
                   className="text-[#ddd] text-[1.3rem] tracking-[2.7px] uppercase"
                 >
                   <span className="text-white  mr-[11px]">02</span> Resume
