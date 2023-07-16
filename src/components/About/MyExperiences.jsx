@@ -83,7 +83,7 @@ const MyExperiences = () => {
                   Led the frontend development of a microservice blog
                 </li>
                 <li className="text-[16px] text-gray-500">
-                  Designed ad developed features for the microservice blog
+                  Designed and developed features for the microservice blog
                 </li>
               </ul>
             </div>

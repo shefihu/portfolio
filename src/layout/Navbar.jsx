@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import resume from "../assets/pdf/RotimiShefiuBalogunResume.pdf";
 import { HiMenuAlt2 } from "react-icons/hi";
+import Logo from "../assets/images/home/logo.png";
 import Sidebar from "./Sidebar";
 const Navbar = ({
   handleClickScroll,
@@ -37,7 +38,7 @@ const Navbar = ({
         <div className="w-full h-full flex justify-between items-center 2xl:max-w-[110rem] max-w-[85rem] mx-auto">
           <div className="md:flex hidden items-center space-x-2 md:space-x-10">
             <a href="/" className="xl:text-4xl lg:text-3xl text-4xl font-bold ">
-              HEX
+              <img src={Logo} alt="" className="w-[44px]" />
             </a>
           </div>
 
@@ -88,7 +89,7 @@ const Navbar = ({
           </ul>
         </div>
         <div className="flex md:hidden justify-between items-center space-x-2 md:space-x-10">
-          <h1 className="xl:text-4xl lg:text-3xl text-4xl font-bold ">HEX</h1>
+          <img src={Logo} alt="" className="w-[44px]" />
           <button onClick={() => setIsSidebarOpen(!isSidebarOpen)} className="">
             <HiMenuAlt2 className="w-7 h-7" />
           </button>
